@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    min-height: 200vh;
+}
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+section .side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+section .side#side1 {
+    clip-path: polygon(0% 1%, 68% 0%, 31% 19%, 66% 26%, 18% 38%, 61% 47%, 11% 58%, 56% 70%, 7% 81%, 50% 90%, 9% 99%, 46% 100%, 1% 100%);
+}
+
+section .side#side2 {
+    clip-path: polygon(100% 0, 68% 0%, 31% 19%, 66% 26%, 18% 38%, 61% 47%, 11% 58%, 56% 70%, 7% 81%, 50% 90%, 9% 99%, 46% 100%, 100% 100%);
+}
+
+.content {
+    background-color: #000;
+    color: #fff;
+    padding: 100px;
+    padding-top: 150vh;
+}
+
+.content h2 {
+    position: relative;
+    font-size: 4em;
+}
+
+.content p {
+    position: relative;
+    font-size: 1.2em;
+}
+
+.class {
+    padding-left: 20px;
+}
+
+.source {
+    border: 2px solid white;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <title>Website</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>swal("Hey!", "Your username : codeovate\n\nPassword: password", "info");</script>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="img/img.png" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Coding</a></li>
+            <li><a href="../login page/index4.html" onclick="showAlert()" target="_blank">Login</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Welcome</p>
+                <p class="text-small">In this Website there is many Projects made by me there is also Demo video of this and also you download it</p>
+                <div class="buttons">
+                    <button class="btn"><a href="https://www.youtube.com/channel/UCCLdGsITOQlLU8SNjbg3i2A?sub_confirmation=1" class="youtube" target="_blank"> Subscribe</a></button>
+                    <button class="btn"><a href="../login page/index4.html" class="youtube" target="_blank">Get Started</button></a>
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="img/logo.png" alt="Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-left">
+        <div class="paras">
+        <p class="sectionTag text-big"><b>What is Coding and Programming?</b></p>
+        <p class="sectionSubTag text-small">Coding or programming is the process of creating instructions for computers using programming languages. 
+            Coding is used to program the websites, apps, and other technologies we interact with every day.Computer coding is the use of computer programming 
+            languages to give computers and machines instructions on what actions to perform. It is the way humans communicate with machines, and it allows us t
+            o create software like programs, operating systems, and mobile apps.
+        </div>
+        <video class="video" autoplay loop muted>
+            <source src="video/coding.mp4" type="video/mp4">
+          </video>
+        </p>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+        <p class="sectionTag text-big"><b>What is Java?</b></p>
+        <p class="sectionSubTag text-small">Java is a programming language and computing platform first released by 
+            Sun Microsystems in 1995. There are lots of applications and websites that will not work unless you have Java installed, 
+            and more are created every day. Java is fast, secure, and reliable. From laptops to datacenters, game consoles to scientific 
+            supercomputers, cell phones to the Internet, Java is everywhere! Java allows you to play online games, chat with people around 
+            world, calculate your mortgage interest, and view images in 3D, just to name a few. It's also integral to the intranet applications 
+            and othe    r e-business solutions that are the foundation of corporate computing.
+        </div>
+        <video class="video" autoplay loop muted>
+            <source src="video/java.mp4" type="video/mp4">
+          </video>
+        </p>
+    </section>
+
+    <section class="section section-left" id="about">
+        <div class="paras">
+        <p class="sectionTag text-big"><b>What is Python?</b></p>
+        <p class="sectionSubTag text-small">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. 
+            Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for 
+            Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. 
+            Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. 
+            Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the 
+            extensive standard library are available in source or binary form without charge for all major platforms, and can be freely 
+            distributed.
+        </div>
+              <video class="video" autoplay loop muted>
+                <source src="video/python.mp4" type="video/mp4">
+              </video>
+        </p>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+        <p class="sectionTag text-big"><b>What is HTML?</p></b></p>
+        <p class="sectionSubTag text-small">HTML stands for Hypertext Markup Language. It allows the user to create and structure sections, paragraphs, headings, links, and blockquotes for web pages and applications.
+
+            HTML is not a programming language, meaning it doesn’t have the ability to create dynamic functionality. Instead, it makes it possible to organize and format documents, similarly to Microsoft Word.
+            
+            When working with HTML, we use simple code structures (tags and attributes) to mark up a website page. 
+        </div>
+              
+                <video class="video" autoplay loop muted>
+                    <source src="video/html.mp4" type="video/mp4">
+                  </video>
+              
+        </p>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your E-mail">
+                <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Elaborate your concern"></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-footer background-color" >
+            Copyright &copy; 2020 -All rights reserved
+        </p>
+        
+    </footer>
+    <script src="js/resp.js"></script>
+   
+</body>
+    
+
+</html>

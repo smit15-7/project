@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Responsive Card</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="../python video/racing-car.html" target="_blank"><img src="img/Car.PNG" alt=""></div></a>
+        <div class="swiper-slide"><a href="../python video/flappy-bird.html" target="_blank"><img src="img/flappy.jpg" alt=""></div></a>
+        
+        <div class="swiper-slide"><a href="../python video/virtual assistant.html" target="_blank"><img src="img/jarvis.png" alt=""></div></a>
+        <div class="swiper-slide"><a href="../python video/memory game.html" target="_blank"><img src="img/memory.png" alt=""></div></a>
+        <div class="swiper-slide"><a href="../python video/pokemon.html" target="_blank" class="pointer"><img src="img/Pokemon.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="../python video/tic-tac-toe.html" target="_blank"><img src="img/tic-tac-toe.png" alt=""></div></a>
+        <div class="swiper-slide"><a href="../../../thank page/index.html" target="_blank"><img src="../java/vector-question-mark.jpg" alt=""></div></a>
+         
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+            var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 500,
+                disableOnIntertarget: false,
+            }
+            });
+        </script>
+</body>
+</html>
